@@ -1,0 +1,71 @@
+Gadgets information
+============================================================
+0x00000000004006a2 : adc byte ptr [rax], ah ; jmp rax
+0x000000000040099f : add bl, dh ; ret
+0x000000000040099d : add byte ptr [rax], al ; add bl, dh ; ret
+0x000000000040099b : add byte ptr [rax], al ; add byte ptr [rax], al ; add bl, dh ; ret
+0x00000000004006ac : add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x000000000040099c : add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x000000000040058b : add byte ptr [rax], al ; add rsp, 8 ; ret
+0x00000000004006ae : add byte ptr [rax], al ; pop rbp ; ret
+0x000000000040099e : add byte ptr [rax], al ; ret
+0x0000000000400910 : add byte ptr [rbp + rax - 0x18], dh ; enter -4, -1 ; leave ; ret
+0x0000000000400718 : add byte ptr [rcx], al ; ret
+0x0000000000400714 : add eax, 0x200956 ; add ebx, esi ; ret
+0x0000000000400912 : add eax, 0xfffcc8e8 ; dec ecx ; ret
+0x0000000000400719 : add ebx, esi ; ret
+0x000000000040058e : add esp, 8 ; ret
+0x000000000040058d : add rsp, 8 ; ret
+0x0000000000400717 : and byte ptr [rax], al ; add ebx, esi ; ret
+0x000000000040073e : call rax
+0x0000000000400ae3 : call rsp
+0x0000000000400917 : dec ecx ; ret
+0x0000000000400914 : enter -4, -1 ; leave ; ret
+0x000000000040097c : fmul qword ptr [rax - 0x7d] ; ret
+0x000000000040091d : in eax, 0x5f ; pop rsi ; pop rdx ; ret
+0x0000000000400739 : int1 ; push rbp ; mov rbp, rsp ; call rax
+0x000000000040069d : je 0x4006b8 ; pop rbp ; mov edi, 0x601070 ; jmp rax
+0x00000000004006eb : je 0x400700 ; pop rbp ; mov edi, 0x601070 ; jmp rax
+0x0000000000400738 : je 0x400731 ; push rbp ; mov rbp, rsp ; call rax
+0x00000000004006a5 : jmp rax
+0x0000000000400918 : leave ; ret
+0x0000000000400589 : mov bl, 0 ; add byte ptr [rax], al ; add rsp, 8 ; ret
+0x0000000000400713 : mov byte ptr [rip + 0x200956], 1 ; ret
+0x000000000040073c : mov ebp, esp ; call rax
+0x000000000040091c : mov ebp, esp ; pop rdi ; pop rsi ; pop rdx ; ret
+0x00000000004006a0 : mov edi, 0x601070 ; jmp rax
+0x000000000040073b : mov rbp, rsp ; call rax
+0x000000000040091b : mov rbp, rsp ; pop rdi ; pop rsi ; pop rdx ; ret
+0x0000000000400922 : nop ; pop rbp ; ret
+0x00000000004006a8 : nop dword ptr [rax + rax] ; pop rbp ; ret
+0x0000000000400998 : nop dword ptr [rax + rax] ; ret
+0x00000000004006f5 : nop dword ptr [rax] ; pop rbp ; ret
+0x0000000000400716 : or dword ptr [rax], esp ; add byte ptr [rcx], al ; ret
+0x000000000040098c : pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x000000000040098e : pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400990 : pop r14 ; pop r15 ; ret
+0x0000000000400992 : pop r15 ; ret
+0x0000000000400712 : pop rbp ; mov byte ptr [rip + 0x200956], 1 ; ret
+0x000000000040069f : pop rbp ; mov edi, 0x601070 ; jmp rax
+0x000000000040098b : pop rbp ; pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x000000000040098f : pop rbp ; pop r14 ; pop r15 ; ret
+0x00000000004006b0 : pop rbp ; ret
+0x000000000040091e : pop rdi ; pop rsi ; pop rdx ; ret
+0x0000000000400993 : pop rdi ; ret
+0x0000000000400920 : pop rdx ; ret
+0x0000000000400991 : pop rsi ; pop r15 ; ret
+0x000000000040091f : pop rsi ; pop rdx ; ret
+0x000000000040098d : pop rsp ; pop r13 ; pop r14 ; pop r15 ; ret
+0x000000000040073a : push rbp ; mov rbp, rsp ; call rax
+0x000000000040091a : push rbp ; mov rbp, rsp ; pop rdi ; pop rsi ; pop rdx ; ret
+0x0000000000400715 : push rsi ; or dword ptr [rax], esp ; add byte ptr [rcx], al ; ret
+0x0000000000400591 : ret
+0x0000000000400737 : sal byte ptr [rcx + rsi*8 + 0x55], 0x48 ; mov ebp, esp ; call rax
+0x00000000004009a5 : sub esp, 8 ; add rsp, 8 ; ret
+0x00000000004009a4 : sub rsp, 8 ; add rsp, 8 ; ret
+0x00000000004006aa : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x000000000040099a : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x0000000000400736 : test eax, eax ; je 0x400733 ; push rbp ; mov rbp, rsp ; call rax
+0x0000000000400735 : test rax, rax ; je 0x400734 ; push rbp ; mov rbp, rsp ; call rax
+
+Unique gadgets found: 67
